@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   font-weight: 400;
-  color: #b82730;
+  color: #000;
 }
 
 * a:hover, * label:hover {
@@ -14,12 +14,12 @@
 }
 
 ::-moz-selection {
-  background: #b82730;
+  background: #000;
   color: #fffdfa;
 }
 
 ::selection {
-  background: #b82730;
+  background: #000;
   color: #fffdfa;
 }
 
@@ -42,7 +42,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 80px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -66,7 +66,7 @@ body {
 
 #header #logo {
   font-size: 1.5em;
-  color: #b82730;
+  color: #000;
 }
 
 #header #links {
@@ -81,7 +81,7 @@ body {
 }
 
 #header #links a {
-  color: #b82730;
+  color: #000;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 7px 0 7px 0;
@@ -261,7 +261,7 @@ footer .social a {
   vertical-align: middle;
   width: 100% !important;
   height: auto !important;
-  background: #b82730;
+  background: #000;
 }
 
 @media screen and (max-width: 1450px) {

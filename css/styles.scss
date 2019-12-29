@@ -1,5 +1,5 @@
 $base: #fffdfa;
-$accent: #b82730;
+$accent: #000;
 $gutter-s: 7.5vw;
 $gutter: 10vw;
 * {
@@ -14,10 +14,6 @@ $gutter: 10vw;
         filter: saturate(2);
     }
 }
-::selection {
-    background: $accent;
-    color: $base;
-}
 html {
     margin: 0;
     padding: 0;
@@ -30,6 +26,12 @@ body {
     margin: 0;
     padding: 0;
     background: $base;
+}
+.button {
+    padding: 18px 34px;
+    background: $accent;
+    color: $base;
+    margin-top: 40px;
 }
 #header {
     position: fixed;

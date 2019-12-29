@@ -4,23 +4,13 @@
   margin: 0;
   padding: 0;
   font-weight: 400;
-  color: #b82730;
+  color: #000;
 }
 
 * a:hover, * label:hover {
   cursor: pointer !important;
   -webkit-filter: saturate(2);
           filter: saturate(2);
-}
-
-::-moz-selection {
-  background: #b82730;
-  color: #fffdfa;
-}
-
-::selection {
-  background: #b82730;
-  color: #fffdfa;
 }
 
 html {
@@ -36,6 +26,13 @@ body {
   margin: 0;
   padding: 0;
   background: #fffdfa;
+}
+
+.button {
+  padding: 18px 34px;
+  background: #000;
+  color: #fffdfa;
+  margin-top: 40px;
 }
 
 #header {
@@ -66,7 +63,7 @@ body {
 
 #header #logo {
   font-size: 1.5em;
-  color: #b82730;
+  color: #000;
 }
 
 #header #links {
@@ -81,7 +78,7 @@ body {
 }
 
 #header #links a {
-  color: #b82730;
+  color: #000;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 7px 0 7px 0;
@@ -241,41 +238,41 @@ footer .social a {
 
 #welcome {
   width: 100%;
-  padding: 80px 0;
-  height: calc(100vh - 160px);
+  padding: 80px 0 0 0;
+  height: calc(100vh - 80px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
 #welcome .text {
-  font-size: 2em;
-  width: 40%;
+  font-size: 3em;
+  z-index: 2;
+  pointer-events: none;
 }
 
 #welcome .text h1 {
-  padding-bottom: 40px;
+  padding: 30px 40px;
+  color: #fffdfa;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.75);
 }
 
 #welcome #images {
-  width: 50vw;
-  height: 100%;
+  position: absolute;
+  width: 100vw;
+  height: calc(100vh - 80px);
   margin-right: -10vw;
 }
 
 #welcome #images .img {
-  height: calc(100vh - 160px);
-  width: 50vw;
+  height: calc(100vh - 80px);
+  width: 100vw;
   position: absolute;
   background-size: cover;
   background-repeat: no-repeat;
@@ -284,30 +281,30 @@ footer .social a {
 }
 
 #welcome #images #l0 {
-  background-image: url("../img/lander0.webp");
-  background-position: 35% 50%;
+  background-image: url("../img/lander2.webp");
+  background-position: 50% 20%;
   opacity: 1;
 }
 
 #welcome #images #l1 {
+  background-image: url("../img/lander0.webp");
+  background-position: 35% 50%;
+  opacity: 0;
+}
+
+#welcome #images #l2 {
   background-image: url("../img/lander1.webp");
   background-position: 50% 50%;
   opacity: 0;
 }
 
-#welcome #images #l2 {
-  background-image: url("../img/lander2.webp");
-  background-position: 50% 50%;
-  opacity: 0;
-}
-
 .section {
-  padding: 200px 0;
+  margin: 120px 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 2fr;
       grid-template-columns: 1fr 2fr;
-  grid-column-gap: 32px;
+  grid-column-gap: 30px;
   width: 100%;
 }
 
@@ -316,38 +313,9 @@ footer .social a {
 }
 
 .section p {
-  font-size: 1.5em;
+  font-size: 1em;
   line-height: 2;
   max-width: 700px;
-}
-
-.pictures {
-  width: 90vw;
-  margin: 0 -5vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.pictures img:first-child {
-  width: calc(100% - 40% - 100px);
-}
-
-.pictures img:last-child {
-  width: 40%;
-}
-
-#saveplate {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -355,37 +323,101 @@ footer .social a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding-top: 0;
 }
 
-#saveplate h2 {
+.pictures {
+  width: 90vw;
+  margin: 0 -5vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.pictures img {
   width: 100%;
-  padding-bottom: 50px;
 }
 
-#saveplate iframe {
-  border: 4px solid #b82730;
+#mosey {
+  padding-top: 20px;
+}
+
+#galbut {
+  position: absolute;
+  margin: 20px 0 0 -5vw;
+  font-size: 1.15em;
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+}
+
+#galbut img {
+  height: 14px;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+#galbut img:hover {
+  cursor: pointer !important;
+}
+
+#galbut:hover {
+  cursor: pointer !important;
+}
+
+#galbut:hover img {
+  padding-left: 10px;
+}
+
+#saveplate {
   width: 100%;
-  margin-bottom: 50px;
+  margin: 120px -10vw 0 -10vw;
+  padding: 120px 10vw;
+  background: rgba(0, 0, 0, 0.15);
 }
 
-#saveplate img {
+#feedback img {
+  width: 90%;
+}
+
+#feedback .t h2 {
+  margin-bottom: 30px;
+}
+
+#contact {
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 -10vw;
+  background: rgba(0, 0, 0, 0.15);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contact a {
+  padding: 200px 0;
   width: 100%;
-  display: none;
-  margin-bottom: 50px;
+  height: 100%;
+  text-align: center;
+  font-size: 4em;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
 }
 
-#saveplate a {
-  padding: 20px 40px;
-  background: #b82730;
-  color: #fffdfa;
+#contact a:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
 }
 
 @media screen and (max-width: 1300px) {
@@ -396,7 +428,7 @@ footer .social a {
     width: 60%;
   }
   .section {
-    padding: 150px 0;
+    margin: 150px 0;
   }
   .pictures {
     margin: 0 0;
@@ -435,7 +467,7 @@ footer .social a {
     display: none;
   }
   .section {
-    padding: 150px 0;
+    margin: 150px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -451,7 +483,6 @@ footer .social a {
   }
   .section p {
     max-width: 100%;
-    font-size: 1.25em;
   }
   .pictures {
     width: calc(100vw - 100px);
@@ -511,7 +542,7 @@ footer .social a {
     height: 300px;
   }
   .section {
-    padding: 150px 0;
+    margin: 150px 0;
   }
   .section p {
     font-size: .9em;

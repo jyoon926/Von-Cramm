@@ -45,7 +45,7 @@ function cursor() {
         $cursor.css("left", getX(event) - 30 + "px");
         if ($('#images').is(":hover")) {
             $('*').css("cursor", "none");
-            if ((getX(event) > ($width * .75))) {
+            if ((getX(event) > ($width * .5))) {
                 $('#images').unbind().click(function() {
                     $('#l' + i).css("opacity", "0");
                     if (i == lim) {
@@ -57,7 +57,7 @@ function cursor() {
                     console.log(i);
                 });
             }
-            if ((getX(event) <= $width * .75)) {
+            if ((getX(event) <= $width * .5)) {
                 $('#images').unbind().click(function() {
                     $('#l' + i).css("opacity", "0");
                     if (i == 0) {
@@ -69,7 +69,7 @@ function cursor() {
                     console.log(i);
                 });
             }
-            if (getX(event) > $width * .75) {
+            if (getX(event) > $width * .5) {
                 $cursor.attr("src", "img/ui/arrowRight.svg");
             } else {
                 $cursor.attr("src", "img/ui/arrowLeft.svg");

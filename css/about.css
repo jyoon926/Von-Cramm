@@ -13,6 +13,16 @@
           filter: saturate(2);
 }
 
+::-moz-selection {
+  background: #000;
+  color: #fffdfa;
+}
+
+::selection {
+  background: #000;
+  color: #fffdfa;
+}
+
 html {
   margin: 0;
   padding: 0;
@@ -26,13 +36,6 @@ body {
   margin: 0;
   padding: 0;
   background: #fffdfa;
-}
-
-.button {
-  padding: 18px 34px;
-  background: #000;
-  color: #fffdfa;
-  margin-top: 40px;
 }
 
 #header {
@@ -235,4 +238,10 @@ footer .social a {
     padding: 30px;
   }
 }
-/*# sourceMappingURL=styles.css.map */
+
+#title {
+  font-size: 4em;
+  font-weight: 400;
+  padding: 200px 0 100px 0;
+}
+/*# sourceMappingURL=about.css.map */
