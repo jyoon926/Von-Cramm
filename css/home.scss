@@ -43,8 +43,8 @@
         }
     }
 }
-#about {
-    padding: 250px 0;
+.section {
+    padding: 200px 0;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-column-gap: 32px;
@@ -58,7 +58,47 @@
         max-width: 700px;
     }
 }
-
+.pictures {
+    width: 90vw;
+    margin: 0 -5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    img:first-child {
+        width: calc(100% - 40% - 100px);
+    }
+    img:last-child {
+        width: 40%;
+    }
+}
+#saveplate {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 0;
+    h2 {
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    iframe {
+        border: 4px solid $accent;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    img {
+        width: 100%;
+        display: none;
+        margin-bottom: 50px;
+    }
+    a {
+        padding: 20px 40px;
+        background: $accent;
+        color: $base;
+    }
+}
 @media screen and (max-width: 1300px) {
     #welcome {
         .text {
@@ -68,8 +108,11 @@
             width: 60%;
         }
     }
-    #about {
+    .section {
         padding: 150px 0;
+    }
+    .pictures {
+        margin: 0 0;
     }
 }
 @media screen and (max-width: 1050px) {
@@ -96,7 +139,7 @@
     #cursor {
         display: none;
     }
-    #about {
+    .section {
         padding: 150px 0;
         display: flex;
         flex-direction: column;
@@ -109,6 +152,34 @@
             max-width: 100%;
             font-size: 1.25em;
         }
+    }
+    .pictures {
+        width: calc(100vw - 100px);
+        img:first-child {
+            width: calc(100% - 40% - 50px);
+        }
+    }
+}
+@media screen and (max-width: 650px) {
+    .pictures {
+        width: calc(100vw - 100px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        img:first-child {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        img:last-child {
+            width: 100%;
+        }
+    }
+    #saveplate iframe {
+        display: none;
+    }
+    #saveplate img {
+        display: inline;
     }
 }
 @media screen and (max-width: 450px) {
@@ -130,10 +201,13 @@
             }
         }
     }
-    #about {
+    .section {
         padding: 150px 0;
         p {
             font-size: .9em;
         }
+    }
+    .pictures {
+        width: calc(100vw - 60px);
     }
 }
