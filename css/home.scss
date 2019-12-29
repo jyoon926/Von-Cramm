@@ -1,7 +1,4 @@
-$base: #fffdfa;
-$accent: #b82730;
-$gutter-s: 7.5vw;
-$gutter: 10vw;
+@import 'styles';
 #welcome {
     width: 100%;
     padding: 80px 0;
@@ -30,17 +27,17 @@ $gutter: 10vw;
             transition-duration: .4s;
         }
         #l0 {
-            background-image: url('../img/lander0.jpg');
+            background-image: url('../img/lander0.webp');
             background-position: 35% 50%;
             opacity: 1;
         }
         #l1 {
-            background-image: url('../img/lander1.jpg');
+            background-image: url('../img/lander1.webp');
             background-position: 50% 50%;
             opacity: 0;
         }
         #l2 {
-            background-image: url('../img/lander2.jpg');
+            background-image: url('../img/lander2.webp');
             background-position: 50% 50%;
             opacity: 0;
         }

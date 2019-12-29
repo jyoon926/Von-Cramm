@@ -13,12 +13,23 @@
           filter: saturate(2);
 }
 
+::-moz-selection {
+  background: #b82730;
+  color: #fffdfa;
+}
+
+::selection {
+  background: #b82730;
+  color: #fffdfa;
+}
+
 html {
   margin: 0;
   padding: 0;
   font-size: 18px;
   overflow-x: hidden;
   background: #fffdfa;
+  scroll-behavior: smooth;
 }
 
 body {
