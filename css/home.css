@@ -152,10 +152,17 @@
     font-size: .75em;
   }
   #welcome #images {
+    height: 300px;
     margin-right: 60px;
+  }
+  #welcome #images .img {
+    height: 300px;
   }
   #about {
     padding: 150px 0;
+  }
+  #about p {
+    font-size: .9em;
   }
 }
 /*# sourceMappingURL=home.css.map */

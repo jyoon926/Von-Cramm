@@ -123,10 +123,17 @@ $gutter: 10vw;
             }
         }
         #images {
+            height: 300px;
             margin-right: 60px;
+            .img {
+                height: 300px;
+            }
         }
     }
     #about {
         padding: 150px 0;
+        p {
+            font-size: .9em;
+        }
     }
 }
