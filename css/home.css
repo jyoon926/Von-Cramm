@@ -1,35 +1,162 @@
-.hero {
+#welcome {
   width: 100%;
-  height: 100vh;
-  background: #e3e3e3;
+  padding: 80px 0;
+  height: calc(100vh - 160px);
+  background: #fffdfa;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.hero h1 {
-  font-size: 5em;
-  z-index: 1;
-  color: #222222;
-  background: #e3e3e3;
-  padding: 20px 40px;
-  pointer-events: none;
+#welcome .text {
+  font-size: 2em;
+  width: 40%;
 }
 
-.hero #images {
-  position: absolute;
-  background-image: url("../img/lander0.jpg");
-  width: 100%;
+#welcome .text h1 {
+  padding-bottom: 40px;
+}
+
+#welcome #images {
+  width: 50vw;
   height: 100%;
+  margin-right: -10vw;
+}
+
+#welcome #images .img {
+  height: calc(100vh - 160px);
+  width: 50vw;
+  position: absolute;
   background-size: cover;
-  background-position: center;
-  -webkit-box-shadow: inset 0 0 20vw rgba(0, 0, 0, 0.75);
-          box-shadow: inset 0 0 20vw rgba(0, 0, 0, 0.75);
+  background-repeat: no-repeat;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
+}
+
+#welcome #images #l0 {
+  background-image: url("../img/lander0.jpg");
+  background-position: 35% 50%;
+  opacity: 1;
+}
+
+#welcome #images #l1 {
+  background-image: url("../img/lander1.jpg");
+  background-position: 50% 50%;
+  opacity: 0;
+}
+
+#welcome #images #l2 {
+  background-image: url("../img/lander2.jpg");
+  background-position: 50% 50%;
+  opacity: 0;
+}
+
+#about {
+  padding: 250px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  grid-column-gap: 32px;
+  width: 100%;
+}
+
+#about h2 {
+  font-size: 3em;
+}
+
+#about p {
+  font-size: 1.5em;
+  line-height: 2;
+  max-width: 700px;
+}
+
+@media screen and (max-width: 1300px) {
+  #welcome .text {
+    width: 40%;
+  }
+  #welcome #images {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  #welcome {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    padding: 0;
+  }
+  #welcome .text {
+    width: 100%;
+    padding: 200px 0;
+  }
+  #welcome #images {
+    width: 100%;
+    height: 500px;
+    margin-right: 100px;
+  }
+  #welcome #images .img {
+    height: 500px;
+    width: 100%;
+  }
+  #cursor {
+    display: none;
+  }
+  #about {
+    padding: 200px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  #about h2 {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  #about p {
+    max-width: 100%;
+    font-size: 1.25em;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #welcome .text {
+    padding: 150px 0;
+  }
+  #welcome .text h1 {
+    font-size: 1.5em;
+  }
+  #welcome .text h4 {
+    font-size: .75em;
+  }
+  #welcome #images {
+    margin-right: 60px;
+  }
+  #about {
+    padding: 150px 0;
+  }
 }
 /*# sourceMappingURL=home.css.map */

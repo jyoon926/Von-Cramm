@@ -37,46 +37,38 @@ function getScroll()
 
 var offset = 200;
 
-
+var i = 0;
+const lim = 2;
 function cursor() {
-    $cursor.css("top", getY(event) - 8 + "px");
-    $cursor.css("left", getX(event) - 8 + "px");
-    var i = 0;
-    if ($('#images').is(":hover")) {
-        $('*').css("cursor", "none");
-        if (getX(event) > $width / 2) {
-            $cursor.attr("src", "img/ui/arrowRight.svg");
-            $('#images').click(function() {
-                i = 1;
-                $('#images').css("background-image", "url('../img/lander" + i + ".jpg')");
-                console.log(i);
-            });
+    if ($width > 1050) {
+        $cursor.css("top", getY(event) - 30 + "px");
+        $cursor.css("left", getX(event) - 30 + "px");
+        if ($('#images').is(":hover")) {
+            $('*').css("cursor", "none");
+            if ((getX(event) > ($width * .75))) {
+                $('#images').unbind().click(function() {
+                    i = i + 1;
+                    $('#l' + (i - 1)).css("opacity", "0");
+                    $('#l' + i).css("opacity", "1");
+                    console.log(i);
+                });
+            }
+            if ((getX(event) <= $width * .75)) {
+                $('#images').unbind().click(function() {
+                    i = i - 1;
+                    $('#l' + (i + 1)).css("opacity", "0");
+                    $('#l' + i).css("opacity", "1");
+                    console.log(i);
+                });
+            }
+            if (getX(event) > $width * .75) {
+                $cursor.attr("src", "img/ui/arrowRight.svg");
+            } else {
+                $cursor.attr("src", "img/ui/arrowLeft.svg");
+            }
         } else {
-            $cursor.attr("src", "img/ui/arrowLeft.svg");
-            $('#images').click(function() {
-                i = 0;
-                $('#images').css("background-image", "url('../img/lander" + i + ".jpg')");
-                console.log(i);
-            });
+            $cursor.attr("src", "");
+            $('*').css("cursor", "auto");
         }
-    } else {
-        $cursor.attr("src", "");
-        $('*').css("cursor", "auto");
-    }
-}
-
-window.onscroll = function() {
-    scrollFunction()
-};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        $('#header').css("background", "#e3e3e3");
-        $('#logo').css("color", "#222222");
-        $('#link').css("color", "#222222");
-    } else {
-        $('#header').css("background", "none");
-        $('#logo').css("color", "#e3e3e3");
-        $('#link').css("color", "#e3e3e3");
     }
 }

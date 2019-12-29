@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="https://use.typekit.net/ewm2fmn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <img src="img/ui/cursor.svg" alt="" id="cursor">
     <div id="header">
         <p id="logo">Von Cramm</p>
+        <input type="checkbox" id="checkbox" class="checkbox">
+        <label for="checkbox" class="menu-icon"><img src="img/ui/menu.svg" alt=""></label>
         <div id="links">
             <a class="link" href="#">Home</a>
             <a class="link" href="#">About</a class="link">
@@ -24,11 +27,35 @@
         </div>
     </div>
     <div id="pageWrap">
-        <div class="hero">
-            <h1>We are Von Cramm</h1>
-            <div id="images"></div>
+        <div id="welcome">
+            <div class="text">
+                <h1>We are Von Cramm</h1>
+                <h4>Established 1953</h4>
+            </div>
+            <div id="images">
+                <div class="img" id="l0"></div>
+                <div class="img" id="l1"></div>
+                <div class="img" id="l2"></div>
+            </div>
         </div>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>With 34 members, Von Cramm Cooperative (the "Cramm") is the largest house owned by Cornell University. We are a diverse group of graduate and undergraduate students with a wide range of backgrounds and interests. Our goal is to be a community that supports and enriches its members through thoughtful interaction, responsibility and generosity. At most times of the day, there are people around to engage in conversation or perhaps a game of pool. Often in winter, people are drawn to the fireplace in the living room, and when warm weather arrives they hang out in the back yard.</p>
+        </section>
+
+        
     </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1690.9597230557333!2d-76.49247691484445!3d42.44892182301195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d08197133486a7%3A0x495faa8003f5e39!2sVon%20Cramm%20Cooperative!5e0!3m2!1sen!2sus!4v1577644776136!5m2!1sen!2sus" frameborder="0"></iframe>
+    <footer>
+        <div class="info">
+            <p>Copyright © Von Cramm 2019</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/pages/Von-Cramm-Hall/159855270701191">Facebook</a>
+            <a href="https://www.instagram.com/crammies4lyfe">Instagram</a>
+        </div>
+    </footer>
     
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="js/script.js"></script>
