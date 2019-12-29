@@ -123,6 +123,12 @@ footer {
     }
 }
 @media screen and (max-width: 1050px) {
+    * {
+        a:hover, label:hover {
+            cursor: pointer !important;
+            filter: saturate(1);
+        }
+    }
     #pageWrap {
         width: calc(100vw - 100px);
         padding: 0 50px;

@@ -161,6 +161,11 @@ footer .social a {
 }
 
 @media screen and (max-width: 1050px) {
+  * a:hover, * label:hover {
+    cursor: pointer !important;
+    -webkit-filter: saturate(1);
+            filter: saturate(1);
+  }
   #pageWrap {
     width: calc(100vw - 100px);
     padding: 0 50px;
