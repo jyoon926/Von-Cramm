@@ -47,16 +47,24 @@ function cursor() {
             $('*').css("cursor", "none");
             if ((getX(event) > ($width * .75))) {
                 $('#images').unbind().click(function() {
-                    i = i + 1;
-                    $('#l' + (i - 1)).css("opacity", "0");
+                    $('#l' + i).css("opacity", "0");
+                    if (i == lim) {
+                        i = 0;
+                    } else {
+                        i = i + 1;
+                    }
                     $('#l' + i).css("opacity", "1");
                     console.log(i);
                 });
             }
             if ((getX(event) <= $width * .75)) {
                 $('#images').unbind().click(function() {
-                    i = i - 1;
-                    $('#l' + (i + 1)).css("opacity", "0");
+                    $('#l' + i).css("opacity", "0");
+                    if (i == 0) {
+                        i = lim;
+                    } else {
+                        i = i - 1;
+                    }
                     $('#l' + i).css("opacity", "1");
                     console.log(i);
                 });

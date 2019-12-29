@@ -71,6 +71,9 @@ $gutter: 10vw;
             width: 60%;
         }
     }
+    #about {
+        padding: 150px 0;
+    }
 }
 @media screen and (max-width: 1050px) {
     #welcome {
@@ -97,7 +100,7 @@ $gutter: 10vw;
         display: none;
     }
     #about {
-        padding: 200px 0;
+        padding: 150px 0;
         display: flex;
         flex-direction: column;
         width: 100%;
