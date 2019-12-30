@@ -2,6 +2,13 @@
 #title {
     padding: 200px 0 0 0;
 }
+.section h2 b {
+    font-size: 17px;
+    line-height: 20px !important;
+    a {
+        border-bottom: 2px solid $accent;
+    }
+}
 form {
     display: flex;
     flex-direction: column;
