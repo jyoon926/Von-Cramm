@@ -409,6 +409,11 @@ footer .social a {
   #galbut {
     margin: 20px 0 0 0;
   }
+  #saveplate {
+    width: 100%;
+    margin: 120px -5vw 0 -5vw;
+    padding: 120px 5vw;
+  }
 }
 
 @media screen and (max-width: 1050px) {
@@ -440,6 +445,11 @@ footer .social a {
     width: 100%;
     margin: 0 0;
   }
+  #saveplate {
+    width: 100%;
+    margin: 120px -50px 0 -50px;
+    padding: 120px 50px;
+  }
   #feedback img {
     display: none;
   }
@@ -461,12 +471,6 @@ footer .social a {
   .pictures img {
     width: 100%;
     margin-bottom: 16px;
-  }
-  #saveplate iframe {
-    display: none;
-  }
-  #saveplate img {
-    display: inline;
   }
 }
 
@@ -525,8 +529,8 @@ footer .social a {
     font-size: .9em;
   }
   #saveplate {
-    margin: 80px -10vw 0 -10vw;
-    padding: 80px 10vw;
+    margin: 80px -30px 0 -30px;
+    padding: 80px 30px;
   }
 }
 /*# sourceMappingURL=home.css.map */
