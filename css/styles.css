@@ -83,7 +83,7 @@ body {
 }
 
 #header #links {
-  width: 700px;
+  width: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

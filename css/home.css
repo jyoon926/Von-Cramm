@@ -73,13 +73,17 @@ body {
           align-items: center;
 }
 
+#header #logo i {
+  font-style: normal;
+}
+
 #header #logo img {
   height: 40px;
   padding-right: 20px;
 }
 
 #header #links {
-  width: 700px;
+  width: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
