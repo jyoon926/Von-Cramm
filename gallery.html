@@ -156,8 +156,15 @@
             <a href="https://www.instagram.com/crammies4lyfe" target="none">Instagram</a>
         </div>
     </footer>
-    
+    <div id="loading">
+        <p>Loading Images</p>
+    </div>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="js/script.js"></script>
+    <script language="javascript" type="text/javascript">
+        $(window).load(function() {
+        $('#loading').css("top", "-100vh");
+     });
+   </script>
 </body>
 </html>

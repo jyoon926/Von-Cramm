@@ -1,4 +1,4 @@
-@import 'styles';
+@import 'master';
 #welcome {
     width: 100%;
     padding: 80px 0 0 0;
@@ -95,7 +95,7 @@
     width: 100%;
     margin: 120px -10vw 0 -10vw;
     padding: 120px 10vw;
-    background: rgba(0,0,0,0.15);
+    background: rgb(255, 223, 155);
 }
 #feedback {
     img {
