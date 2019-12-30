@@ -26,6 +26,7 @@ body {
   margin: 0;
   padding: 0;
   background: #fffdfa;
+  overflow-x: hidden;
 }
 
 .button {
@@ -79,7 +80,7 @@ body {
 
 #header #links {
   font-size: 1em;
-  width: 700px;
+  width: 750px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

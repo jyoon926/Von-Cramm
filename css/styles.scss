@@ -26,6 +26,7 @@ body {
     margin: 0;
     padding: 0;
     background: $base;
+    overflow-x: hidden;
 }
 .button {
     padding: 18px 34px;
@@ -59,7 +60,7 @@ body {
     }
     #links {
         font-size: 1em;
-        width: 700px;
+        width: 750px;
         display: flex;
         justify-content: space-between;
         a {
