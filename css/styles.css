@@ -279,6 +279,9 @@ footer .social a {
 }
 
 @media screen and (max-width: 450px) {
+  html {
+    font-size: 16px;
+  }
   #pageWrap {
     width: calc(100vw - 60px);
     padding: 0 30px;
