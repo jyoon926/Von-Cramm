@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   font-weight: 400;
-  color: #000;
+  color: #241e1e;
 }
 
 * a:hover, * label:hover {
@@ -18,21 +18,21 @@ html {
   padding: 0;
   font-size: 17px;
   overflow-x: hidden;
-  background: #fffdfa;
+  background: #f2ebeb;
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background: #fffdfa;
+  background: #f2ebeb;
   overflow-x: hidden;
 }
 
 .button {
   padding: 18px 34px;
-  background: #000;
-  color: #fffdfa;
+  background: #241e1e;
+  color: #f2ebeb;
   margin-top: 40px;
   line-height: 1.5;
 }
@@ -59,13 +59,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #fffdfa;
+  background: #f2ebeb;
   z-index: 999;
 }
 
 #header #logo {
   font-size: 1.35em !important;
-  color: #000;
+  color: #241e1e;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,7 +95,7 @@ body {
 
 #header #links a {
   font-size: .9em;
-  color: #000;
+  color: #241e1e;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 7px 0 7px 0;
@@ -127,7 +127,7 @@ iframe {
 footer {
   width: 80vw;
   padding: 50px 10vw;
-  background: #fffdfa;
+  background: #f2ebeb;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -153,7 +153,7 @@ footer .social {
 footer .social a {
   margin: 0 0 0 30px;
   padding-bottom: 2px;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #241e1e;
 }
 
 #checkbox {
@@ -207,7 +207,7 @@ footer .social a {
     position: fixed;
     height: 100vh;
     width: 100vw;
-    background: #fffdfa;
+    background: #f2ebeb;
     margin: 0;
     top: -100vh;
     left: 0;
@@ -275,7 +275,7 @@ footer .social a {
   footer .social a {
     margin: 0 30px 0 0;
     padding-bottom: 2px;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #241e1e;
   }
 }
 
