@@ -6,6 +6,9 @@ html {
     font-size: 4em;
     font-weight: 400;
     padding: 250px 0 100px 0;
+    b {
+        border-bottom: 4px solid $accent;
+    }
 }
 .section {
     margin: 100px 0;
@@ -116,6 +119,10 @@ html {
     }
 }
 @media screen and (max-width: 850px) {
+    #title {
+        font-size: 3em;
+        padding: 200px 0 50px 0;
+    }
     .pictures {
         display: flex;
         flex-direction: column;

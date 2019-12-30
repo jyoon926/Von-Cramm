@@ -8,6 +8,10 @@ html {
   padding: 250px 0 100px 0;
 }
 
+#title b {
+  border-bottom: 4px solid #000;
+}
+
 .section {
   margin: 100px 0;
   display: -ms-grid;
@@ -161,6 +165,10 @@ html {
 }
 
 @media screen and (max-width: 850px) {
+  #title {
+    font-size: 3em;
+    padding: 200px 0 50px 0;
+  }
   .pictures {
     display: -webkit-box;
     display: -ms-flexbox;
