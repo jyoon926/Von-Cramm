@@ -363,6 +363,11 @@ footer .social a {
 
 .pictures img {
   width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
 }
 
 #mosey {
@@ -404,6 +409,9 @@ footer .social a {
 
 #feedback img {
   width: 90%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #feedback .t h2 {
