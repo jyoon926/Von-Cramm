@@ -244,7 +244,7 @@
   #welcome .text {
     padding: 0;
     margin: 0;
-    height: calc(100vh - 500px);
+    height: 60vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -271,12 +271,15 @@
     margin: 0;
     padding: 0;
     position: initial;
-    height: 500px;
+    height: 40vh;
   }
   #welcome #images .img {
-    height: 500px;
+    height: 40vh;
     margin: 0;
     padding: 0;
+    background-size: cover;
+    background-position: 50% 100%;
+    background-attachment: scroll !important;
   }
   .pictures img {
     margin-bottom: 20px;

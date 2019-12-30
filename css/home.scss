@@ -190,7 +190,7 @@
         .text {
             padding: 0;
             margin: 0;
-            height: calc(100vh - 500px);
+            height: 60vh;
             display: flex;
             justify-content: flex-start;
             align-items: flex-end;
@@ -211,11 +211,14 @@
             margin: 0;
             padding: 0;
             position: initial;
-            height: 500px;
+            height: 40vh;
             .img {
-                height: 500px;
+                height: 40vh;
                 margin: 0;
                 padding: 0;
+                background-size: cover;
+                background-position: 50% 100%;
+                background-attachment: scroll !important;
             }
         }
     }
