@@ -47,6 +47,8 @@
     justify-content: center;
     align-items: center;
     transform-origin: top;
+    transition-duration: 1s;
+    pointer-events: none;
     p {
         font-size: 2em;
         font-family: 'usual', sans-serif;
