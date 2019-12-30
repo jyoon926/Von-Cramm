@@ -299,22 +299,10 @@ footer .social a {
 }
 
 #welcome #images #l0 {
-  background-image: url("../img/lander2.webp");
+  background-image: url("../img/lander2.jpg");
   background-attachment: fixed;
   background-position: 50% 0%;
   opacity: 1;
-}
-
-#welcome #images #l1 {
-  background-image: url("../img/lander0.webp");
-  background-position: 35% 50%;
-  opacity: 0;
-}
-
-#welcome #images #l2 {
-  background-image: url("../img/lander1.webp");
-  background-position: 50% 50%;
-  opacity: 0;
 }
 
 .section {

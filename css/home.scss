@@ -29,20 +29,10 @@
             transition-duration: .4s;
         }
         #l0 {
-            background-image: url('../img/lander2.webp');
+            background-image: url('../img/lander2.jpg');
             background-attachment: fixed;
             background-position: 50% 0%;
             opacity: 1;
-        }
-        #l1 {
-            background-image: url('../img/lander0.webp');
-            background-position: 35% 50%;
-            opacity: 0;
-        }
-        #l2 {
-            background-image: url('../img/lander1.webp');
-            background-position: 50% 50%;
-            opacity: 0;
         }
     }
 }
