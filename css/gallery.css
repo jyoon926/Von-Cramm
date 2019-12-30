@@ -51,7 +51,6 @@
   height: 100vh;
   width: 100vw;
   background: #fffdfa;
-  z-index: 1000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,10 +62,6 @@
           align-items: center;
   -webkit-transform-origin: top;
           transform-origin: top;
-  -webkit-transition-duration: 2s;
-          transition-duration: 2s;
-  -webkit-transition-delay: .5s;
-          transition-delay: .5s;
 }
 
 #loading p {

@@ -95,7 +95,11 @@
     width: 100%;
     margin: 120px -10vw 0 -10vw;
     padding: 120px 10vw;
-    background: rgb(255, 223, 155);
+    background: none;
+}
+hr {
+    width: 100%;
+    border: .5px solid rgba(0,0,0,0.5);
 }
 #feedback {
     img {
@@ -108,6 +112,10 @@
             margin-bottom: 30px;
         }
     }
+}
+#where {
+    margin: 100px 0 40px 0;
+    font-size: 1.25em;
 }
 @media screen and (max-width: 1300px) {
     .pictures {
