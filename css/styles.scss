@@ -53,17 +53,20 @@ body {
         color: $accent;
         display: flex;
         align-items: center;
+        i {
+            font-style: normal;
+        }
         img {
             height: 40px;
             padding-right: 20px;
         }
     }
     #links {
-        font-size: 1em;
-        width: 750px;
+        width: 700px;
         display: flex;
         justify-content: space-between;
         a {
+            font-size: .9em;
             color: $accent;
             box-sizing: border-box;
             padding: 7px 0 7px 0;
@@ -149,6 +152,9 @@ footer {
     }
     #header {
         padding: 0 50px;
+        #logo i {
+            display: none;
+        }
         #links {
             position: fixed;
             height: 100vh;

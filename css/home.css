@@ -79,8 +79,7 @@ body {
 }
 
 #header #links {
-  font-size: 1em;
-  width: 750px;
+  width: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,6 +89,7 @@ body {
 }
 
 #header #links a {
+  font-size: .9em;
   color: #000;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -193,6 +193,9 @@ footer .social a {
   #header {
     padding: 0 50px;
   }
+  #header #logo i {
+    display: none;
+  }
   #header #links {
     position: fixed;
     height: 100vh;
@@ -293,7 +296,8 @@ footer .social a {
 
 #welcome #images #l0 {
   background-image: url("../img/lander2.webp");
-  background-position: 50% 20%;
+  background-attachment: fixed;
+  background-position: 50% 0%;
   opacity: 1;
 }
 

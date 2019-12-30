@@ -73,14 +73,17 @@ body {
           align-items: center;
 }
 
+#header #logo i {
+  font-style: normal;
+}
+
 #header #logo img {
   height: 40px;
   padding-right: 20px;
 }
 
 #header #links {
-  font-size: 1em;
-  width: 750px;
+  width: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,6 +93,7 @@ body {
 }
 
 #header #links a {
+  font-size: .9em;
   color: #000;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -192,6 +196,9 @@ footer .social a {
   }
   #header {
     padding: 0 50px;
+  }
+  #header #logo i {
+    display: none;
   }
   #header #links {
     position: fixed;
