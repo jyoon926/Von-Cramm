@@ -187,38 +187,10 @@
         margin: 0;
         height: 100vh;
         width: 100vw;
-        .text {
-            padding: 0;
-            margin: 0;
-            height: 60vh;
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-end;
-            h1 {
-                font-size: 1.5em;
-                color: $accent;
-                text-shadow: none;
-                padding: 0 30px;
-                margin-bottom: 30px;
-            }
-            h4 {
-                font-size: .75em;
-                color: $accent;
-                text-shadow: none;
-            }
-        }
         #images {
-            margin: 0;
-            padding: 0;
-            position: initial;
-            height: 40vh;
+            height: 100vh;
             .img {
-                height: 40vh;
-                margin: 0;
-                padding: 0;
-                background-size: cover;
-                background-position: 50% 100%;
-                background-attachment: scroll !important;
+                height: 100vh;
             }
         }
     }
