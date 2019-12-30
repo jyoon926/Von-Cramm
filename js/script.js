@@ -36,7 +36,7 @@ function getScroll()
 }
 
 var offset = 200;
-
+/** 
 var i = 0;
 const lim = 2;
 function cursor() {
@@ -79,4 +79,4 @@ function cursor() {
             $('*').css("cursor", "auto");
         }
     }
-}
+}*/

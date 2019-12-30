@@ -7,9 +7,8 @@
     justify-content: center;
     align-items: center;
     .text {
-        font-size: 3em;
+        font-size: 3vw;
         z-index: 2;
-        pointer-events: none;
         h1 {
             padding: 30px 40px;
             color: $base;
@@ -114,67 +113,22 @@
         }
     }
 }
-#contact {
-    width: 100vw;
-    box-sizing: border-box;
-    margin: 0 -10vw;
-    background: rgba(0,0,0,0.15);
-    display: flex;
-    justify-content: center;
-    a {
-        padding: 200px 0;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        font-size: 4em;
-        transition-duration: .3s;
-        &:hover {
-            transform: scale(1.25);
-        }
-    }
-}
 @media screen and (max-width: 1300px) {
-    #welcome {
-        .text {
-            width: 40%;
-        }
-        #images {
-            width: 60%;
-        }
-    }
-    .section {
-        margin: 150px 0;
-    }
     .pictures {
         margin: 0 0;
     }
+    #galbut {
+        margin: 20px 0 0 0;
+    }
 }
 @media screen and (max-width: 1050px) {
-    #welcome {
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        height: auto;
-        padding: 0;
-        .text {
-            width: 100%;
-            padding: 200px 0;
-        }
-        #images {
-            width: 100%;
-            height: 500px;
-            margin-right: 100px;
-            .img {
-                height: 500px;
-                width: 100%;
-            }
-        }
+    #welcome .text {
+        font-size: 2em;
     }
     #cursor {
         display: none;
     }
     .section {
-        margin: 150px 0;
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -187,25 +141,28 @@
         }
     }
     .pictures {
-        width: calc(100vw - 100px);
-        img:first-child {
-            width: calc(100% - 40% - 50px);
+        grid-column-gap: 10px;
+        width: 100%;
+        margin: 0 0;
+    }
+    #feedback {
+        img {
+            display: none;
+        }
+        .t {
+            h2 {
+                margin-bottom: 0;
+            }
         }
     }
 }
 @media screen and (max-width: 650px) {
     .pictures {
-        width: calc(100vw - 100px);
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        img:first-child {
+        img {
             width: 100%;
-            margin-bottom: 40px;
-        }
-        img:last-child {
-            width: 100%;
+            margin-bottom: 16px;
         }
     }
     #saveplate iframe {
@@ -217,30 +174,51 @@
 }
 @media screen and (max-width: 450px) {
     #welcome {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
         .text {
-            padding: 150px 0;
+            padding: 0;
+            margin: 0;
+            height: calc(100vh - 500px);
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
             h1 {
                 font-size: 1.5em;
+                color: $accent;
+                text-shadow: none;
+                padding: 0 30px;
+                margin-bottom: 30px;
             }
             h4 {
                 font-size: .75em;
+                color: $accent;
+                text-shadow: none;
             }
         }
         #images {
-            height: 300px;
-            margin-right: 60px;
+            margin: 0;
+            padding: 0;
+            position: initial;
+            height: 500px;
             .img {
-                height: 300px;
+                height: 500px;
+                margin: 0;
+                padding: 0;
             }
         }
     }
     .section {
-        margin: 150px 0;
+        margin: 80px 0;
         p {
             font-size: .9em;
         }
     }
-    .pictures {
-        width: calc(100vw - 60px);
+    #saveplate {
+        margin: 80px -10vw 0 -10vw;
+        padding: 80px 10vw;
     }
 }
