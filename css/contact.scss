@@ -2,6 +2,9 @@
 #title {
     padding: 200px 0 0 0;
 }
+.section h2 {
+    font-size: 2em;
+}
 .section h2 b {
     font-size: 17px;
     line-height: 20px !important;
@@ -76,6 +79,12 @@ form {
     .bod .text .sec {
         display: flex !important;
         flex-direction: column;
+        .person h4 {
+            font-size: 1.25em;
+        }
+    }
+    .bod .text h3 {
+        font-size: 1.5em;
     }
 }
 @media screen and (max-width: 450px) {

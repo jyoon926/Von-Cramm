@@ -2,6 +2,10 @@
   padding: 200px 0 0 0;
 }
 
+.section h2 {
+  font-size: 2em;
+}
+
 .section h2 b {
   font-size: 17px;
   line-height: 20px !important;
@@ -106,6 +110,12 @@ form .send:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .bod .text .sec .person h4 {
+    font-size: 1.25em;
+  }
+  .bod .text h3 {
+    font-size: 1.5em;
   }
 }
 
